@@ -31,7 +31,7 @@ h1 {
 h3 {
     color: azure;
     animation: moveUp 1s ease-out;
-    margin-top: 0px;
+    margin-top: 1px;
 }
 
 hr {
