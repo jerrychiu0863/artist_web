@@ -1,0 +1,39 @@
+/* nav */
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8)
+}
+
+.navbar-default {
+    background: $color-white;
+    border: none;
+}
+
+.navbar-brand {
+    font-family: 'Niconne', cursive;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $color-grey-dark;
+    text-transform: uppercase;         
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $color-grey-dark;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #e7e7e7;
+}
+
+.dropdown-menu>li>a {
+    text-transform: uppercase;
+    margin: 1px 0;
+}
+
+/* End of header */

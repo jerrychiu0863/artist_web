@@ -1,0 +1,14 @@
+/* Carousel */
+.carousel-indicators{
+    top: 5px;
+    
+    & li {
+         border: 1px solid $color-grey-light;
+    }
+    
+    & .active {
+        background-color: $color-grey-light;
+    }
+}
+
+/* End of Carousel */

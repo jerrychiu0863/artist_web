@@ -1,0 +1,22 @@
+{
+  "name": "artist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerrychiu0863/artist_web.git"
+  },
+  "author": "Jerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerrychiu0863/artist_web/issues"
+  },
+  "homepage": "https://github.com/jerrychiu0863/artist_web#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
