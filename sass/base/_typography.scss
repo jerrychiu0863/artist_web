@@ -2,3 +2,23 @@ body {
     
     font-family: Lato;
 }
+
+.statement__left {
+    background: blue;
+    display: block;
+    height: 87vh;
+}
+
+.statement__main {
+    margin-top: 30%;
+    padding: 1rem 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    &--content {
+        padding: 0 1rem;
+        text-justify: inter-word;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+}
