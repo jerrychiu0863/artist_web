@@ -1,9 +1,28 @@
-section  {
+.statement  {
+    margin-top: 2rem;
+    
+    &__left {
+        background-image: url(../image/time-404x645.jpg);
+        background-size: cover;
+        
+        display: block;
+        height: 64.5rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        border-radius: 10px 0 0 10px;
+    }
+    
+    &__right--container {
+        width: 80%;
+        margin: 3rem auto;
+    }
     
     & .container {
-        height: 87vh;
-        background: $color-grey-light;
+        height: 65rem;
+        background: $color-white;
         margin-top: -1rem;
+        box-shadow: 0 1.5rem 6rem rgba($color-black, .15);
+        border-radius: 10px;
     }
    
 }
