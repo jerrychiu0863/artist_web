@@ -1,5 +1,6 @@
 .statement  {
     margin-top: 2rem;
+    backface-visibility: hidden;
     
     &__left {
         background-image: url(../image/time-404x645.jpg);

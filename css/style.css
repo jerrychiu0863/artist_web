@@ -58,12 +58,16 @@ body {
   letter-spacing: 1px;
   width: 70%;
   background: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: moveInRight 1.5s ease-out; }
   .statement__main--content {
     padding: 0 1rem;
     text-justify: inter-word;
     font-size: 1.6rem;
-    line-height: 2.8rem; }
+    line-height: 2.8rem;
+    animation: moveInRight 1.5s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards; }
 
 #content {
   text-align: center;
@@ -106,7 +110,10 @@ body {
   padding: 3px;
   transition: all .2s;
   margin-left: 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: backwards; }
 
 .button-text:hover {
   background-color: black;
@@ -178,7 +185,8 @@ footer {
 
 /* End of Carousel */
 .statement {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  backface-visibility: hidden; }
   .statement__left {
     background-image: url(../image/time-404x645.jpg);
     background-size: cover;
