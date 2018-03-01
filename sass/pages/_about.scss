@@ -1,0 +1,68 @@
+.section__about {
+    margin-top: 2rem;
+    
+    
+    &--left {
+        width: 20%;
+        height: 100%;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        position: absolute;
+        left: 0;
+        border-radius: 1rem 0 0 1rem;
+        
+        &-image {
+            width: 25rem;
+            height: 25rem;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            z-index: 100;
+            border-radius: 3px;
+            box-shadow: .5rem 1rem 3rem rgba($color-black, .35);
+            
+        }
+    }
+    
+    & .container {
+        position: relative;
+        height: 65rem;
+        background: $color-white;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1.5rem 6rem rgba($color-black, .15);
+        border-radius: 1rem;
+    }
+    
+    &--right {
+        width: 80%;
+        background-color: $color-white;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        border-radius: 0 1rem 1rem 0;
+        
+        &-content {
+            margin-left: 15rem;
+            margin-top: 8rem;
+            padding: 5rem 5rem;
+            
+            & h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+             
+            & p {
+                height: 40rem;
+                padding-right:4rem;
+                column-count: 2;
+                column-gap: 4rem;
+                column-rule: 1px solid $color-grey-light;
+                line-height: 2.8rem;
+            }
+        } 
+    }
+}
