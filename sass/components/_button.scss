@@ -66,4 +66,45 @@
         transform: translateY(0);
     }
 }
+
+.button-contact {
+    text-shadow: none;
+    color: black;
+    width: 20rem;
+    height: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    padding: 1rem 2rem;
+    line-height: 2.5rem;
+    background-color: $color-white;
+    display: inline-block;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+    transition: all .2s;
+    
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-black;
+        border: 2px solid black;
+    }
+    
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+        position: absolute;
+        bottom: 2.5rem;
+    }
+    
+    &:active {
+        position: absolute;
+        bottom: 2.2rem;
+    }
+   
+}
+
+
+
 /* End of Button -learn more*/

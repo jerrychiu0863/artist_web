@@ -1,0 +1,89 @@
+.section__contact {
+    margin-top: 2rem;
+  
+    & .container {
+        position: relative;
+        height: 65rem;
+        background: $color-white;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1.5rem 6rem rgba($color-black, .15);
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+      
+    &--left {
+        position: relative;
+        width: 40rem;
+        background-color: $color-grey-light;
+        height: 100%;
+        margin-left: -1.5rem;
+        
+    }
+    
+    &-button {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        
+    }
+    
+    &--profile {
+        height: 30%;
+        width: 100%;
+        background-color: $color-white;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        padding: 2rem;
+        overflow: hidden;
+        transition: all .5s;
+        transform:perspective(50rem) scale(0);
+        
+        &.popup {
+            transform:perspective(50rem) scale(1);
+            box-shadow: 0 -.5rem 6rem rgba($color-black, .3);
+        }
+         
+        & h3 {
+            margin-top: 0;
+        }
+        
+        & ul {
+            display: flex;
+            
+            & li {
+                list-style: none;
+                font-size: 2rem;
+                width: 33.3%;
+            }
+        }
+    }
+    
+    &--close {
+        font-size: 2rem;
+        color: $color-grey-dark;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        
+        &:hover {
+            color: $color-black;
+        }
+    }
+    
+    &--right {
+        width: 77rem;
+        background-color: $color-grey-light;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+}
+

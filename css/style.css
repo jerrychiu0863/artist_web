@@ -69,6 +69,21 @@ body {
     animation-delay: 1.5s;
     animation-fill-mode: backwards; }
 
+.heading__third {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: .3rem;
+  display: block;
+  padding: 1rem 0; }
+
+.section__contact-titile {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: .5rem;
+  display: inline-block;
+  letter-spacing: 1px; }
+
 #content {
   text-align: center;
   padding-top: 2%; }
@@ -84,6 +99,12 @@ body {
 
 .margin-bottom-xsmall {
   margin-bottom: 2rem; }
+
+.let-space-small {
+  letter-spacing: 1px; }
+
+.border-bottom {
+  border-bottom: 1px solid #999; }
 
 /* Button -learn more*/
 .button {
@@ -136,6 +157,35 @@ body {
 .button-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.button-contact {
+  text-shadow: none;
+  color: black;
+  width: 20rem;
+  height: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  padding: 1rem 2rem;
+  line-height: 2.5rem;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all .2s; }
+  .button-contact:link, .button-contact:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black; }
+  .button-contact:hover {
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    bottom: 2.5rem; }
+  .button-contact:active {
+    position: absolute;
+    bottom: 2.2rem; }
 
 /* End of Button -learn more*/
 /* footer*/
@@ -240,6 +290,68 @@ footer {
         column-gap: 4rem;
         column-rule: 1px solid #e7e7e7;
         line-height: 2.8rem; }
+
+.section__contact {
+  margin-top: 2rem; }
+  .section__contact .container {
+    position: relative;
+    height: 65rem;
+    background: #fff;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    overflow: hidden; }
+  .section__contact--left {
+    position: relative;
+    width: 40rem;
+    background-color: #e7e7e7;
+    height: 100%;
+    margin-left: -1.5rem; }
+  .section__contact-button {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+  .section__contact--profile {
+    height: 30%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+    transition: all .5s;
+    transform: perspective(50rem) scale(0); }
+    .section__contact--profile.popup {
+      transform: perspective(50rem) scale(1);
+      box-shadow: 0 -0.5rem 6rem rgba(0, 0, 0, 0.3); }
+    .section__contact--profile h3 {
+      margin-top: 0; }
+    .section__contact--profile ul {
+      display: flex; }
+      .section__contact--profile ul li {
+        list-style: none;
+        font-size: 2rem;
+        width: 33.3%; }
+  .section__contact--close {
+    font-size: 2rem;
+    color: #777;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer; }
+    .section__contact--close:hover {
+      color: black; }
+  .section__contact--right {
+    width: 77rem;
+    background-color: #e7e7e7;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 /* Carousel */
 .carousel-indicators {
