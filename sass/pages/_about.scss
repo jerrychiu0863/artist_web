@@ -52,7 +52,8 @@
             & h2 {
                 text-transform: uppercase;
                 font-weight: 700;
-                letter-spacing: 1px;
+                letter-spacing: .3rem;
+                color: $color-font;
             }
              
             & p {
@@ -62,6 +63,8 @@
                 column-gap: 4rem;
                 column-rule: 1px solid $color-grey-light;
                 line-height: 2.8rem;
+                letter-spacing: .1rem;
+                font-weight: 400;
             }
         } 
     }

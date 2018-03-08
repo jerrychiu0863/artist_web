@@ -45,7 +45,7 @@
         
         &.popup {
             transform:perspective(50rem) scale(1);
-            box-shadow: 0 -.5rem 6rem rgba($color-black, .3);
+            box-shadow: -2rem 0 5rem rgba($color-black, .3);
         }
          
         & h3 {
@@ -62,7 +62,7 @@
             }
         }
     }
-    
+     
     &--close {
         font-size: 2rem;
         color: $color-grey-dark;
@@ -77,13 +77,23 @@
     }
     
     &--right {
-        width: 77rem;
-        background-color: $color-grey-light;
-        height: 100%;
+        width: 50%;
+        height: 32rem;
+        background-color: #fff;
+        border-top: .5px solid $color-grey-light;
+        border-bottom: .5px solid $color-grey-light;
         position: absolute;
-        right: 0;
-        top: 0;
-        
+        right: 8%;
+        top: 25%;
+        padding: 1.5rem;
+        //padding-left: 10rem;
+        text-align: center;
+        /*-webkit-box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);
+	   -moz-box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);
+	        box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);*/
     }
+    
+    
+     
 }
 

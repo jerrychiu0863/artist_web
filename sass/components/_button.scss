@@ -105,6 +105,42 @@
    
 }
 
-
+.button-submit {
+    text-shadow: none;
+    color: black;
+    width: 8rem;
+    height: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    padding: .6rem 1rem;
+    line-height: 1.5rem;
+    background-color: $color-white;
+    display: inline-block;
+    box-shadow: 0 .2rem 1rem rgba($color-black, .1);
+    transition: all .2s;
+    
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-black;
+        border: .15rem solid $color-font;
+    }
+    
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+        
+        
+    }
+    
+    &:active {
+        
+       
+    }
+}
 
 /* End of Button -learn more*/

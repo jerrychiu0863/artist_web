@@ -16,6 +16,31 @@
     &__right--container {
         width: 80%;
         margin: 3rem auto;
+        
+        & h2 {
+            margin-top: 30%;
+            padding: 1rem 1rem;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            width: 70%;
+            text-transform: uppercase;
+            animation: moveInRight 1.5s ease-out;
+            color: $color-font;
+        }
+        
+         & p {
+            color: $color-font;
+            letter-spacing: .1rem;
+            padding: 0 1rem;
+            text-align: justify;
+            text-justify: inter-word;
+            font-weight: 400;
+            line-height: 2.8rem;
+            animation: moveInRight 1.5s ease-out;
+            animation-delay: 1.5s;
+            animation-fill-mode: backwards;
+        
+        }
     }
     
     & .container {

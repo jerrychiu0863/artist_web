@@ -3,32 +3,6 @@ body {
     font-family: Lato;
 }
 
-
-
-.statement__main {
-    margin-top: 30%;
-    padding: 1rem 1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    width: 70%;
-    background: $color-white;
-    text-transform: uppercase;
-    animation: moveInRight 1.5s ease-out;
-   
-    
-     
-    &--content {
-        padding: 0 1rem;
-        text-justify: inter-word;
-        font-size: 1.6rem;
-        line-height: 2.8rem;
-        animation: moveInRight 1.5s ease-out;
-        animation-delay: 1.5s;
-        animation-fill-mode: backwards;
-        
-    }
-}
-
 .heading__third {
     text-transform: uppercase;
     font-weight: bold;
@@ -36,12 +10,21 @@ body {
     letter-spacing: .3rem;
     display: block;
     padding: 1rem 0;
+    color: $color-font
 }
 
 .section__contact-titile {
     font-size: 1.5rem;
-    color: $color-black;
+    color: $color-font;
     margin-bottom: .5rem;
     display: inline-block;
-    letter-spacing: 1px;;
+    letter-spacing: 1px;
+    font-weight: 500;
+   
+}
+
+.section__contact-info {
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: $color-font;
 }
