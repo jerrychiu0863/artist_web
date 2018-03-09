@@ -126,8 +126,8 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        color: $color-black;
-        border: .15rem solid $color-font;
+        color: $color-font;
+        border: .15rem solid $color-black;
     }
     
     &:hover{
@@ -138,7 +138,7 @@
     }
     
     &:active {
-        
+        transform: translateY(1.5px);
        
     }
 }

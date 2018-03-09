@@ -195,11 +195,13 @@ body {
   .button-submit:link, .button-submit:visited {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
-    border: 0.15rem solid #414040; }
+    color: #414040;
+    border: 0.15rem solid black; }
   .button-submit:hover {
     background-color: black;
     color: #fff; }
+  .button-submit:active {
+    transform: translateY(1.5px); }
 
 /* End of Button -learn more*/
 .form__input {
@@ -395,16 +397,18 @@ footer {
     width: 50%;
     height: 32rem;
     background-color: #fff;
-    border-top: 0.5px solid #e7e7e7;
-    border-bottom: 0.5px solid #e7e7e7;
+    border: 0.5px solid #e7e7e7;
+    border-radius: 3px;
     position: absolute;
     right: 8%;
     top: 25%;
     padding: 1.5rem;
     text-align: center;
-    /*-webkit-box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);
-	   -moz-box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);
-	        box-shadow: 0 2px 1rem rgba(211, 211, 211, 0.8);*/ }
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+    animation: moveDown 1.5s ease-in-out; }
+  .section__contact h3 {
+    border-bottom: 0.5px solid #999;
+    display: inline-block; }
 
 /* Carousel */
 .carousel-indicators {
