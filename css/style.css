@@ -231,53 +231,55 @@ body {
     transform: translateY(1.5px); }
 
 /* End of Button -learn more*/
-.form {
+.form__input {
+  border: none;
+  font-size: 1.5rem;
+  padding: .8rem 1rem;
+  font-family: inherit;
+  background-color: rgba(231, 231, 231, 0.2);
+  display: block;
+  width: 37.4rem;
+  margin: 0 0 1rem 9rem; }
+  @media only screen and (max-width: 75em) {
+    .form__input {
+      margin: 0 0 1rem 6.6rem; } }
+  @media screen and (max-width: 992px) {
+    .form__input {
+      margin: 0 0 1rem 1.6rem;
+      width: 90%; } }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      margin: 0 0 1rem 5rem;
+      width: 70%; } }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+    border-bottom: 1.5px solid #999; }
+
+.form__textarea {
+  border: none;
+  padding: .8rem 1rem;
+  font-size: 1.5rem;
+  display: block;
+  font-family: inherit;
+  background-color: rgba(231, 231, 231, 0.2);
+  margin: 0 auto 1rem auto;
+  display: block;
+  width: 37.4rem; }
+  @media screen and (max-width: 992px) {
+    .form__textarea {
+      width: 90%; } }
+  @media only screen and (max-width: 56.25em) {
+    .form__textarea {
+      width: 70%;
+      margin-bottom: 1.5rem; } }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.1);
+    border-bottom: 1.5px solid #999; }
+
+.form__group {
   text-align: center; }
-  .form__input {
-    border: none;
-    font-size: 1.5rem;
-    padding: .8rem 1rem;
-    font-family: inherit;
-    background-color: rgba(231, 231, 231, 0.2);
-    display: block;
-    width: 37.4rem;
-    margin: 0 0 1rem 9rem; }
-    @media only screen and (max-width: 75em) {
-      .form__input {
-        margin: 0 0 1rem 5.1rem; } }
-    @media screen and (max-width: 992px) {
-      .form__input {
-        margin: 0 0 1rem 1.8rem;
-        width: 90%; } }
-    @media only screen and (max-width: 56.25em) {
-      .form__input {
-        margin: 0 0 1rem 5rem;
-        width: 70%; } }
-    .form__input:focus {
-      outline: none;
-      box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
-      border-bottom: 1.5px solid #999; }
-  .form__textarea {
-    border: none;
-    padding: .8rem 1rem;
-    font-size: 1.5rem;
-    display: block;
-    font-family: inherit;
-    background-color: rgba(231, 231, 231, 0.2);
-    margin: 0 auto 1rem auto;
-    display: block;
-    width: 37.4rem; }
-    @media screen and (max-width: 992px) {
-      .form__textarea {
-        width: 90%; } }
-    @media only screen and (max-width: 56.25em) {
-      .form__textarea {
-        width: 70%;
-        margin-bottom: 1.5rem; } }
-    .form__textarea:focus {
-      outline: none;
-      box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.1);
-      border-bottom: 1.5px solid #999; }
 
 /* footer*/
 footer {
