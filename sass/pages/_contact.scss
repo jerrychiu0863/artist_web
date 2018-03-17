@@ -33,15 +33,21 @@
     
     &--profile {
         height: 30%;
-        width: 100%;
+        width: 400px;
         background-color: $color-white;
         position: absolute;
         bottom: 0;
+        left: -1px;
         text-align: center;
         padding: 2rem;
         overflow: hidden;
         transition: all .5s;
         transform:perspective(50rem) scale(0);
+        
+        @include respond(tab-port) {
+             padding: 2.2rem;
+             
+        }
         
         &.popup {
             transform:perspective(50rem) scale(1);
@@ -50,6 +56,13 @@
          
         & h3 {
             margin-top: 0;
+            
+            @include respond(tab-port) {
+                padding: .5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem !important;
+                display: block !important;
+            }
         }
         
         & ul {
@@ -90,11 +103,37 @@
         text-align: center;
         box-shadow: 0 0 1.5rem rgba($color-black, .3);
         animation: moveDown 1.5s ease-in-out;
+        
+        @include respond(tab-land) {
+             right: 4.4%;
+        }
+        
+        @media screen and (max-width:992px) {
+            right: 0;
+            height: 50rem;
+            width: 36.5rem;
+            box-shadow: none;
+            border: none;
+        }
+        
+        @include respond(tab-port) {
+            right: 0;
+            height: 50rem;
+            width: 36.5rem;
+            box-shadow: none;
+            border: none;
+        }
     }
     
     & h3 {
         border-bottom: .5px solid $color-grey-medium;
         display: inline-block;
+        
+         @include respond(tab-port) {
+            font-size: 2.2rem;
+             margin-bottom: 2rem;
+             letter-spacing: 1.3px;
+        }
     }
      
 }

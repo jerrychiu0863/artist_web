@@ -7,10 +7,16 @@
         background-size: cover;
         
         display: block;
-        height: 64.5rem;
+        height: 65rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
         border-radius: 10px 0 0 10px;
+        
+        @media only screen and (max-width: 768px) {
+            background-position: center;
+            -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        }
     }
     
     &__right--container {
@@ -26,6 +32,10 @@
             text-transform: uppercase;
             animation: moveInRight 1.5s ease-out;
             color: $color-font;
+            
+            @include respond(tab-land) {
+                margin-top: 25%;
+            }
         }
         
          & p {

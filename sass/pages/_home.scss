@@ -13,5 +13,9 @@
 
 .learnMore {
     margin-bottom: 9.2rem;
+    
+    @include respond(tab-land) {
+        margin-top: 3rem;
+    }
 }
 /* End of Carousel */
