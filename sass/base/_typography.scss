@@ -3,6 +3,12 @@ body {
     font-family: Lato;
 }
 
+h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .heading__third {
     text-transform: uppercase;
     font-weight: bold;
@@ -28,5 +34,5 @@ body {
 .section__contact-info {
     letter-spacing: 1px;
     font-weight: 300;
-    color: $color-font;
+    color: $color-font; 
 }
