@@ -16,3 +16,8 @@ $(document).ready(function(){
         $('.section__contact--profile').removeClass('popup')      
      });
 });
+
+//portfolio
+//$('.section__portfolio-horizontal-content').hide().delay(2000).fadeIn(1000);
+
+//$('.section__portfolio-horizontal-model').slideDown(2000);
