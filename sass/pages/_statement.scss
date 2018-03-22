@@ -35,8 +35,14 @@
             
             @include respond(tab-land) {
                 margin-top: 25%;
+                margin-bottom: 0;
             }
-        }
+            
+            @include respond(tab-port) {
+                margin-top: 20%;
+                margin-bottom: 0;
+            }
+          }
         
          & p {
             color: $color-font;

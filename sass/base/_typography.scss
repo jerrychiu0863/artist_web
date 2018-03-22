@@ -7,6 +7,10 @@ h2 {
     font-size: 6rem;
     text-transform: uppercase;
     font-weight: 700;
+    
+    @include respond(tab-land) {
+        font-size: 4.8rem;
+    }
 }
 
 .heading__third {
