@@ -17,11 +17,28 @@
             -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
         }
+        
+        @include respond(iphone7-plus) {
+                display: none;
+        }
+            
+    }
+    
+    &__right {
+        @include respond(iphone7-plus) {
+            width: 100%;
+            margin: 0;
+        }
     }
     
     &__right--container {
         width: 80%;
         margin: 3rem auto;
+        
+        /*@include respond(iphone7-plus) {
+                width: 100%;
+             margin: 0;
+        }*/
         
         & h2 {
             margin-top: 25%;
@@ -67,6 +84,10 @@
         box-shadow: 0 1.5rem 6rem rgba($color-black, .15);
         border-radius: 10px;
         margin-bottom: 1rem;
+        
+        @include respond(iphone7-plus) {
+               width: 100%;
+        }
     }
    
 }

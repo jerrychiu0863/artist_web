@@ -17,6 +17,14 @@
                 width: 15%;
         }
         
+        @include respond(tab-port) {
+                width: 15%;
+        }
+        
+        @include respond(phone) {
+                display: none;
+        }
+        
         & img {
             filter: brightness(110%);
         }
@@ -59,7 +67,12 @@
         
         @include respond(tab-land) {
                 width: 85%;
-            }
+        }
+        
+        @include respond(tab-phone) {
+                width: 100%;
+            
+        }
         
         &-content {
             margin-left: 15rem;
@@ -70,7 +83,28 @@
             
             @include respond(tab-land) {
                 margin-top: 5rem;
+            }
+            
+             @include respond(tab-port) {
+                padding-top: 2rem;
             } 
+            
+            @include respond(phone) {
+               margin: auto;
+               margin-left: -7rem;
+               padding-top: 6rem;
+            }
+            
+            @include respond(iphone7-plus) {
+                padding: 4rem 2rem;
+                margin-left: -3.5rem;
+                  
+            }
+            
+            @include respond(phone-small) {
+               padding: 2rem 1rem;
+               
+            }
             
             & h2 {
                 text-transform: uppercase;
@@ -88,6 +122,16 @@
                 line-height: 2.8rem;
                 letter-spacing: .1rem;
                 font-weight: 400;
+                
+                @include respond(iphone7-plus) {
+                    column-count: unset;
+                    
+                }
+                
+                @include respond(phone-small) {
+                    column-count: unset;
+                    
+                }
             }
         } 
     }
