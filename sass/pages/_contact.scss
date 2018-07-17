@@ -10,15 +10,28 @@
         box-shadow: 0 1.5rem 6rem rgba($color-black, .15);
         border-radius: 1rem;
         overflow: hidden;
+        
+         
     }
     
       
     &--left {
         position: relative;
         width: 40rem;
-        background-color: $color-grey-light;
         height: 100%;
         margin-left: -1.5rem;
+        
+        @include respond(phone) {
+             display: none;
+        } 
+        
+        & img {
+            
+            @include respond(tab-land) {
+              width: 40rem;
+              height: 100%;
+            }
+        }
         
     }
     
@@ -47,6 +60,7 @@
         
         @include respond(tab-port) {
              padding: 2.2rem;
+             width: 320px;
              
         }
         
@@ -92,8 +106,8 @@
     
     &--right {
         width: 50%;
-        height: 32rem;
-        background-color: #fff;
+        
+        //background-color: #fff;
         //border: .5px solid $color-grey-light;
         border-radius: 3px;
         position: absolute;
@@ -110,7 +124,7 @@
         }
         
         @media screen and (max-width:992px) {
-            right: 1.8%;
+            right: 5%;
             height: 50rem;
             width: 36.5rem;
             box-shadow: none;
@@ -118,10 +132,20 @@
         }
         
         @include respond(tab-port) {
-            right: 2.6%;
+            margin-right: -6rem;
             height: 50rem;
-            width: 36.5rem;
+            width: 60%;
             box-shadow: none;
+            border: none;
+        }
+        
+        @include respond(phone) {
+            background-color: #fff;
+            margin-right: 2rem;
+            top: 15%;
+            width: 80%;
+            height: 40rem;
+            box-shadow: 0 2px 4px rgba($color-black, .2);
             border: none;
         }
     }
@@ -133,7 +157,7 @@
          @include respond(tab-port) {
             font-size: 2.2rem;
              margin-bottom: 2rem;
-             letter-spacing: 1.3px;
+             letter-spacing: .8px;
         }
     }
      

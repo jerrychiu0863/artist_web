@@ -120,7 +120,7 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.5rem;
-  letter-spacing: .3rem;
+  letter-spacing: .1rem;
   display: block;
   padding: 1rem 0;
   color: #414040; }
@@ -257,6 +257,10 @@ h2 {
   display: inline-block;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
   transition: all .2s; }
+  @media only screen and (max-width: 37.5em) {
+    .button-submit {
+      font-size: 1.2rem;
+      width: 10rem; } }
   .button-submit:link, .button-submit:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -287,7 +291,15 @@ h2 {
       width: 90%; } }
   @media only screen and (max-width: 56.25em) {
     .form__input {
-      margin: 0 0 1rem 5rem;
+      margin: 0 0 1rem 8rem;
+      width: 70%; } }
+  @media only screen and (max-width: 37.5em) {
+    .form__input {
+      margin: 0 0 1rem 7.5rem;
+      width: 70%; } }
+  @media only screen and (max-width: 26.25em) {
+    .form__input {
+      margin: 0 0 1rem 5.6rem;
       width: 70%; } }
   .form__input:focus {
     outline: none;
@@ -623,9 +635,15 @@ footer {
   .section__contact--left {
     position: relative;
     width: 40rem;
-    background-color: #e7e7e7;
     height: 100%;
     margin-left: -1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section__contact--left {
+        display: none; } }
+    @media only screen and (max-width: 75em) {
+      .section__contact--left img {
+        width: 40rem;
+        height: 100%; } }
   .section__contact-button {
     position: absolute;
     bottom: 2rem;
@@ -647,7 +665,8 @@ footer {
     transition: all .5s; }
     @media only screen and (max-width: 56.25em) {
       .section__contact--profile {
-        padding: 2.2rem; } }
+        padding: 2.2rem;
+        width: 320px; } }
     .section__contact--profile.popup {
       transform: perspective(50rem) scale(1);
       box-shadow: -2rem 0 5rem rgba(0, 0, 0, 0.3); }
@@ -676,8 +695,6 @@ footer {
       color: black; }
   .section__contact--right {
     width: 50%;
-    height: 32rem;
-    background-color: #fff;
     border-radius: 3px;
     position: absolute;
     right: 8%;
@@ -691,17 +708,26 @@ footer {
         right: 4.4%; } }
     @media screen and (max-width: 992px) {
       .section__contact--right {
-        right: 1.8%;
+        right: 5%;
         height: 50rem;
         width: 36.5rem;
         box-shadow: none;
         border: none; } }
     @media only screen and (max-width: 56.25em) {
       .section__contact--right {
-        right: 2.6%;
+        margin-right: -6rem;
         height: 50rem;
-        width: 36.5rem;
+        width: 60%;
         box-shadow: none;
+        border: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .section__contact--right {
+        background-color: #fff;
+        margin-right: 2rem;
+        top: 15%;
+        width: 80%;
+        height: 40rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         border: none; } }
   .section__contact h3 {
     border-bottom: 0.5px solid #999;
@@ -710,7 +736,7 @@ footer {
       .section__contact h3 {
         font-size: 2.2rem;
         margin-bottom: 2rem;
-        letter-spacing: 1.3px; } }
+        letter-spacing: .8px; } }
 
 /* Carousel */
 .carousel-indicators {
