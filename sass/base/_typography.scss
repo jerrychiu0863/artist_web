@@ -11,6 +11,14 @@ h2 {
     @include respond(tab-land) {
         font-size: 4.8rem;
     }
+    
+    @include respond(phone) {
+        font-size: 4.4rem;
+    }
+    
+    @include respond(phone-small) {
+        font-size: 3.8rem;
+    }
 }
 
 .heading__third {

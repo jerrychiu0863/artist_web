@@ -13,15 +13,18 @@
         overflow: hidden;
                 
         display: grid;
-        grid-template-columns: max-content minmax(26rem, 1fr);
+        grid-template-columns: max-content minmax(0rem, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        
+                
         @media screen and (max-width: 992px) {
             grid-template-rows: 40vw 1fr;
         }
         
-        
-        
+        @include respond(phone) {
+            grid-template-columns: max-content 1fr;
+            grid-template-rows: 60vw 1fr;
+        }
+             
     }
     
     &-img {
@@ -101,7 +104,7 @@
         animation-fill-mode: backwards;
         
         @include respond(tab-land) {
-           width: 84%;
+           margin-right: 5.7rem;
         }
         
         @media screen and (max-width: 992px) {
@@ -109,8 +112,14 @@
         }
         
         @include respond(tab-port) {
+            margin-right: 0rem;
             width: 92%;
         }
+        
+        @include respond(phone) {
+            display: none;
+        }
+        
     }
 }
 
