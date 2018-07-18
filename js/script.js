@@ -9,10 +9,12 @@ $(function() {
 // profile card 
 
 $(document).ready(function(){
-    $('.section__contact-button.button-contact').click(function(){
+    $('.section__contact-button.button-contact').click(function(e){
+        e.preventDefault();
         $('.section__contact--profile').addClass('popup')             
     });
-     $('.section__contact--close').click(function(){
+     $('.section__contact--close').click(function(e){
+         e.preventDefault();
         $('.section__contact--profile').removeClass('popup')      
      });
 });
