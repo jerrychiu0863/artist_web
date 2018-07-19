@@ -195,7 +195,7 @@ h2 {
   display: inline-block; }
 
 .button-text:link, .button-text:visited {
-  font-size: .8rem;
+  font-size: 1rem;
   color: #777;
   display: inline-block;
   text-decoration: none;
